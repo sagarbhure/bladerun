@@ -1,0 +1,44 @@
+name: LLM Detection
+
+on:
+  pull_request:
+    branches:
+      - '*'
+
+jobs:
+  detect_llm:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+      
+      - name: Install Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+      
+      - name: Run LLM Detection Script
+        run: |
+          pip install requests  # Example dependency
+          pip install PyGithub
+          
+          python detection_script.py ${{ github.event.number }} ${{ github.token }}
+
+      - name: Check for script failure
+        if: ${{ failure() }}
+        run: echo "::set-output name=failed::true"
+      
+      - name: Post failure comment
+        if: steps.detect_script.outputs.failed == 'true'
+        uses: actions/github-script@v4
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const message = 'LLM Detection Script failed to run. Please check the logs.';
+            github.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: message
+            });

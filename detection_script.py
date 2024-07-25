@@ -4,10 +4,8 @@ import requests
 from github import Github, PullRequest
 import json
 import math
-from dotenv import load_dotenv
 
-def configure():
-    load_dotenv()
+# Get the API key from the environment variable
 api = os.environ['apiKey']
 
 def main(pr_number, github_token):

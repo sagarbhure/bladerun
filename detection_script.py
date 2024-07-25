@@ -4,7 +4,10 @@ import requests
 from github import Github, PullRequest
 import json
 import math
-import creds
+from dotenv import load_dotenv
+
+def configure():
+    load_dotenv()
 
 
 def main(pr_number, github_token):
@@ -55,7 +58,7 @@ def get_changed_files(pr: PullRequest):
 
 def pct_llm(cnt):
 
-    headers = {"Authorization": creds.apiKey}
+    headers = {"Authorization": os.getenv('apiKey')}
 
     url = "https://api.edenai.run/v2/text/ai_detection"
     payload = {

@@ -5,7 +5,7 @@ from github import Github, PullRequest
 import json
 import math
 from dotenv import load_dotenv
-
+ 
 def configure():
     load_dotenv()
 api = os.environ['apiKey']

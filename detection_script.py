@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 
 def configure():
     load_dotenv()
-
+api = os.environ['apiKey']
 
 def main(pr_number, github_token):
     # Authenticate with GitHub
@@ -58,7 +58,7 @@ def get_changed_files(pr: PullRequest):
 
 def pct_llm(cnt):
 
-    headers = {"Authorization": ${{ secrets.apiKey }} }
+    headers = {"Authorization":api }
 
     url = "https://api.edenai.run/v2/text/ai_detection"
     payload = {

@@ -6,7 +6,7 @@ import json
 import math
 
 # Get the API key from the environment variable
-api = os.environ['apiKey']
+api = os.environ['APIKEY']
 
 def main(pr_number, github_token):
     # Authenticate with GitHub

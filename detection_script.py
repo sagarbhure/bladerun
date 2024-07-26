@@ -5,6 +5,7 @@ from github import Github, PullRequest
 import json
 import math
 
+api = os.environ['APIKEY']
 
 def main(pr_number, github_token):
     # Authenticate with GitHub
@@ -54,7 +55,7 @@ def get_changed_files(pr: PullRequest):
 
 def pct_llm(cnt):
 
-    headers = {"Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNTZiZDAzODQtNGNmZC00NjNiLTgzY2YtYTdhMDM5NjJmZDU0IiwidHlwZSI6ImFwaV90b2tlbiJ9.ghV8kpI_Ya3q2qczOqmp-Y8fd1fmnaIkbnze6ifUSFI"}
+    headers = {"Authorization":api}
 
     url = "https://api.edenai.run/v2/text/ai_detection"
     payload = {

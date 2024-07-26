@@ -1,5 +1,5 @@
 <div align="center">
-  <img width="250" alt="Screenshot 2024-07-26 at 17 38 41" src="https://github.com/user-attachments/assets/6e37193f-bc88-45ac-bb14-1d3067224397">
+<img width="250" alt="Screenshot 2024-07-26 at 22 05 14" src="https://github.com/user-attachments/assets/a038ac36-68b4-4f89-98bc-8c86e4e64109">
 </div>
 
 <h2><p align="center">🛡️ Safeguarding Code Authenticity in the Era of AI-Generated Content 🛡️</p></h2>

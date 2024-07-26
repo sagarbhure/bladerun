@@ -32,8 +32,7 @@ cd bladerun
 - Create a GitHub Secret APIKEY: Add the TOKEN generated in the previous step as a GitHub Secret.
 
 ## Contributors
-Sagar Bhure
 
-Sourav Dash
+<img width="500" alt="Screenshot 2024-07-26 at 18 35 49" src="https://github.com/user-attachments/assets/7bb3581c-c55a-43eb-b406-377563ba8bd8">
 
-Atul Akella
+

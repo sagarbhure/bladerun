@@ -1,1 +1,1 @@
-
+The Red Bull Racing RB20 is the car that Red Bull Racing uses in the Formula 1 World Championship. This model represents the team's efforts for the 2024 F1 season. As with previous iterations, the RB20 is expected to incorporate the latest technological advancements and engineering innovations to compete at the highest level of the sport.

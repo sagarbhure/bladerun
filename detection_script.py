@@ -60,8 +60,8 @@ def pct_llm(cnt):
     print(api)
     url = "https://api.edenai.run/v2/text/ai_detection"
     payload = {
-    "providers": "originalityai",
-    "text": cnt,
+        "providers": "originalityai",
+        "text": "Your text",
     }
 
     response = requests.post(url, json=payload, headers=headers)

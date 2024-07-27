@@ -56,7 +56,8 @@ def get_changed_files(pr: PullRequest):
 def pct_llm(cnt):
 
     headers = {"Authorization":api}
-
+    print("============== API SAGAR ==================")
+    print(api)
     url = "https://api.edenai.run/v2/text/ai_detection"
     payload = {
     "providers": "originalityai",

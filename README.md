@@ -2,7 +2,7 @@
 <img width="250" alt="Screenshot 2024-07-26 at 22 05 14" src="https://github.com/user-attachments/assets/a038ac36-68b4-4f89-98bc-8c86e4e64109">
 </div>
 
-<h2><p align="center">🛡️ Safeguarding Code Authenticity in the Era of AI-Generated Content 🛡️</p></h2>
+<h2><p align="center">🛡️ The Watchdog for AI-Generated Code 🛡️</p></h2>
 
 🚀 Bladerun is the ultimate GitHub bot that keeps your codebase safe from AI-generated content 🤖. With its lightning-fast detection and insightful comments, Bladerun ensures that every line of code in your pull requests is genuine and of the highest quality. 💻
 
